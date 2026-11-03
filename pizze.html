@@ -4,73 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizze - Grande Piramide d'Egitto</title>
+    <title>Le nostre pizze - Grande Piramide d'Egitto</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>🍕 IL NOSTRO MENÙ PIZZE</h1>
-    <p>Scopri le nostre specialità preparate con ingredienti selezionati.</p>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">🍕 GRANDE PIRAMIDE D'EGITTO</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pizze.html">Pizze</a></li>
+                <li><a href="bevande.html">Bevande</a></li>
+                <li><a href="dolci.html">Dolci</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="menu">
+    <main>
+        <h1 class="section-title">🍕 LE NOSTRE PIZZE</h1>
+        <p class="section-subtitle">
+            Le nostre specialità, preparate con passione e ingredienti selezionati.
+        </p>
 
-        <div class="prodotto">
-            <img src="https://loremflickr.com/640/420/pizza?lock=11" alt="Pizza Margherita">
-            <h2>Margherita</h2>
-            <p>Pomodoro, mozzarella e basilico.</p>
-            <span>€ 6,00</span>
-        </div>
+        <section class="menu">
 
-        <div class="prodotto">
-            <img src="https://loremflickr.com/640/420/pizza?lock=12" alt="Pizza Marinara">
-            <h2>Marinara</h2>
-            <p>Pomodoro, aglio, origano e olio extravergine.</p>
-            <span>€ 5,00</span>
-        </div>
+            <article class="prodotto">
+                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=700" alt="Pizza Margherita">
+                <div class="prodotto-content">
+                    <h2>Margherita</h2>
+                    <p>Pomodoro, mozzarella e basilico fresco.</p>
+                    <span class="prezzo">€ 6,00</span>
+                </div>
+            </article>
 
-        <div class="prodotto">
-            <img src="https://loremflickr.com/640/420/pizza?lock=13" alt="Pizza Diavola">
-            <h2>Diavola</h2>
-            <p>Pomodoro, mozzarella e salame piccante.</p>
-            <span>€ 8,00</span>
-        </div>
+            <article class="prodotto">
+                <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=700" alt="Pizza Diavola">
+                <div class="prodotto-content">
+                    <h2>Diavola</h2>
+                    <p>Pomodoro, mozzarella e salame piccante.</p>
+                    <span class="prezzo">€ 8,00</span>
+                </div>
+            </article>
 
-        <div class="prodotto">
-            <img src="https://loremflickr.com/640/420/pizza?lock=14" alt="Pizza Capricciosa">
-            <h2>Capricciosa</h2>
-            <p>Pomodoro, mozzarella, prosciutto, funghi e carciofi.</p>
-            <span>€ 9,00</span>
-        </div>
+            <article class="prodotto">
+                <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=700" alt="Pizza Quattro Formaggi">
+                <div class="prodotto-content">
+                    <h2>Quattro Formaggi</h2>
+                    <p>Mozzarella, gorgonzola, fontina e parmigiano.</p>
+                    <span class="prezzo">€ 9,00</span>
+                </div>
+            </article>
 
-        <div class="prodotto">
-            <img src="https://loremflickr.com/640/420/pizza?lock=15" alt="Pizza Quattro Formaggi">
-            <h2>Quattro Formaggi</h2>
-            <p>Mozzarella, gorgonzola, fontina e parmigiano.</p>
-            <span>€ 9,00</span>
-        </div>
+            <article class="prodotto">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700" alt="Pizza Vegetariana">
+                <div class="prodotto-content">
+                    <h2>Vegetariana</h2>
+                    <p>Pomodoro, mozzarella, zucchine, melanzane e peperoni.</p>
+                    <span class="prezzo">€ 8,50</span>
+                </div>
+            </article>
 
-        <div class="prodotto">
-            <img src="https://loremflickr.com/640/420/pizza?lock=16" alt="Pizza Napoli">
-            <h2>Napoli</h2>
-            <p>Pomodoro, mozzarella, acciughe e origano.</p>
-            <span>€ 8,00</span>
-        </div>
+            <article class="prodotto">
+                <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=700" alt="Pizza Marinara">
+                <div class="prodotto-content">
+                    <h2>Marinara</h2>
+                    <p>Pomodoro, aglio, origano e olio extravergine.</p>
+                    <span class="prezzo">€ 5,00</span>
+                </div>
+            </article>
 
-        <div class="prodotto">
-            <img src="https://loremflickr.com/640/420/pizza?lock=17" alt="Pizza Vegetariana">
-            <h2>Vegetariana</h2>
-            <p>Pomodoro, mozzarella, zucchine, melanzane e peperoni.</p>
-            <span>€ 8,50</span>
-        </div>
+            <article class="prodotto">
+                <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=700" alt="Pizza Prosciutto e Funghi">
+                <div class="prodotto-content">
+                    <h2>Prosciutto e Funghi</h2>
+                    <p>Pomodoro, mozzarella, prosciutto cotto e funghi.</p>
+                    <span class="prezzo">€ 8,50</span>
+                </div>
+            </article>
 
-        <div class="prodotto">
-            <img src="https://loremflickr.com/640/420/pizza?lock=18" alt="Pizza Prosciutto e Funghi">
-            <h2>Prosciutto e Funghi</h2>
-            <p>Pomodoro, mozzarella, prosciutto cotto e funghi.</p>
-            <span>€ 8,50</span>
-        </div>
+        </section>
+    </main>
 
-    </section>
+    <footer>
+        <h3>GRANDE PIRAMIDE D'EGITTO</h3>
+        <p>La passione per la pizza, ogni giorno.</p>
+        <p>© 2026 Grande Piramide d'Egitto</p>
+    </footer>
 
 </body>
 </html>
