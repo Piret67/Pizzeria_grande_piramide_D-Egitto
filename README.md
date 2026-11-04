@@ -2,7 +2,6 @@
 
 ### Il gusto della tradizione, l'esperienza del digitale.
 
-\!Project \!Status \!License
 
 ---
 
