@@ -1,49 +1,161 @@
-<article class="prodotto">
-    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=700"
-         alt="Karkadè egiziano" loading="lazy">
-    <div class="prodotto-content">
-        <h2>Karkadè Egiziano 🇪🇬</h2>
-        <p>Infuso di fiori di ibisco, dal colore rosso intenso, servito freddo.</p>
-        <span class="prezzo">€ 3,00</span>
-    </div>
-</article>
+HTML
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le nostre bevande - Grande Piramide d'Egitto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<article class="prodotto">
-    <img src="https://images.unsplash.com/photo-1527761939622-911f6a3a1e1d?w=700"
-         alt="Sobia egiziana" loading="lazy">
-    <div class="prodotto-content">
-        <h2>Sobia</h2>
-        <p>Bevanda tradizionale egiziana dolce e cremosa, con cocco e vaniglia.</p>
-        <span class="prezzo">€ 3,50</span>
-    </div>
-</article>
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">🍕 GRANDE PIRAMIDE D'EGITTO</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pizze.html">Pizze</a></li>
+            <li><a href="bevande.html">Bevande</a></li>
+            <li><a href="dolci.html">Dolci</a></li>
+        </ul>
+    </nav>
+</header>
 
-<article class="prodotto">
-    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd4?w=700"
-         alt="Succo di tamarindo" loading="lazy">
-    <div class="prodotto-content">
-        <h2>Tamr Hindi</h2>
-        <p>Bevanda fresca al tamarindo, dolce e leggermente acidula.</p>
-        <span class="prezzo">€ 3,00</span>
-    </div>
-</article>
+<main>
 
-<article class="prodotto">
-    <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=700"
-         alt="Bevanda all'albicocca" loading="lazy">
-    <div class="prodotto-content">
-        <h2>Qamar El Din</h2>
-        <p>Deliziosa bevanda egiziana a base di albicocche, dolce e fruttata.</p>
-        <span class="prezzo">€ 3,50</span>
-    </div>
-</article>
+    <h1 class="section-title">🥤 LE NOSTRE BEVANDE</h1>
+    <p class="section-subtitle">
+        Bevande fresche e dissetanti per accompagnare ogni momento.
+    </p>
 
-<article class="prodotto">
-    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=700"
-         alt="Infuso di anice" loading="lazy">
-    <div class="prodotto-content">
-        <h2>Yansoon</h2>
-        <p>Tradizionale infuso egiziano all'anice, ideale da gustare caldo.</p>
-        <span class="prezzo">€ 2,50</span>
-    </div>
-</article>
+    <section class="menu">
+
+        <article class="prodotto">
+            <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=700" alt="Coca Cola">
+            <div class="prodotto-content">
+                <h2>Coca Cola</h2>
+                <p>La classica bibita dal gusto inconfondibile.</p>
+                <span class="prezzo">€ 2,50</span>
+            </div>
+        </article>
+
+        <article class="prodotto">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd4?w=700" alt="Aranciata">
+            <div class="prodotto-content">
+                <h2>Aranciata</h2>
+                <p>Bevanda frizzante al gusto di arancia.</p>
+                <span class="prezzo">€ 2,50</span>
+            </div>
+        </article>
+
+        <article class="prodotto">
+            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=700" alt="Succo d'arancia">
+            <div class="prodotto-content">
+                <h2>Succo d'Arancia</h2>
+                <p>Succo fresco e dissetante all'arancia.</p>
+                <span class="prezzo">€ 3,00</span>
+            </div>
+        </article>
+
+        <article class="prodotto">
+            <img src="https://images.unsplash.com/photo-1559839914-17aae19cec71?w=700" alt="Acqua">
+            <div class="prodotto-content">
+                <h2>Acqua Naturale</h2>
+                <p>Acqua minerale naturale da 50 cl.</p>
+                <span class="prezzo">€ 1,50</span>
+            </div>
+        </article>
+
+        <article class="prodotto">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=700" alt="Limonata">
+            <div class="prodotto-content">
+                <h2>Limonata</h2>
+                <p>Fresca bevanda al limone.</p>
+                <span class="prezzo">€ 2,50</span>
+            </div>
+        </article>
+
+        <article class="prodotto">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=700" alt="Tè freddo">
+            <div class="prodotto-content">
+                <h2>Tè Freddo</h2>
+                <p>Tè freddo al limone o alla pesca.</p>
+                <span class="prezzo">€ 2,50</span>
+            </div>
+        </article>
+
+    </section>
+
+    <h1 class="section-title">🇪🇬 BEVANDE TIPICHE EGIZIANE</h1>
+    <p class="section-subtitle">
+        Un viaggio nei sapori e nei profumi delle bevande tradizionali egiziane.
+    </p>
+
+    <section class="menu">
+
+        <article class="prodotto">
+            <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=700" alt="Tè egiziano">
+            <div class="prodotto-content">
+                <h2>Shai (Tè Egiziano)</h2>
+                <p>Tè nero tradizionale egiziano, servito caldo e zuccherato a piacere.</p>
+                <span class="prezzo">€ 2,50</span>
+            </div>
+        </article>
+
+        <article class="prodotto">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=700" alt="Karkadè">
+            <div class="prodotto-content">
+                <h2>Karkadè</h2>
+                <p>Infuso di fiori di ibisco dal colore rosso intenso, servito freddo o caldo.</p>
+                <span class="prezzo">€ 3,00</span>
+            </div>
+        </article>
+
+        <article class="prodotto">
+            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=700" alt="Succo di mango">
+            <div class="prodotto-content">
+                <h2>Succo di Mango</h2>
+                <p>Bevanda dolce e cremosa preparata con mango maturo.</p>
+                <span class="prezzo">€ 3,50</span>
+            </div>
+        </article>
+
+        <article class="prodotto">
+            <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=700" alt="Tamarindo">
+            <div class="prodotto-content">
+                <h2>Tamarindo</h2>
+                <p>Bevanda tradizionale a base di tamarindo dal gusto dolce e leggermente acidulo.</p>
+                <span class="prezzo">€ 3,00</span>
+            </div>
+        </article>
+
+        <article class="prodotto">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd4?w=700" alt="Succo di guava">
+            <div class="prodotto-content">
+                <h2>Succo di Guava</h2>
+                <p>Succo tropicale dal gusto delicato e profumato.</p>
+                <span class="prezzo">€ 3,50</span>
+            </div>
+        </article>
+
+        <article class="prodotto">
+            <img src="https://images.unsplash.com/photo-1559839914-17aae19cec71?w=700" alt="Sobia">
+            <div class="prodotto-content">
+                <h2>Sobia</h2>
+                <p>Bevanda egiziana tradizionale a base di latte e cocco, dolce e rinfrescante.</p>
+                <span class="prezzo">€ 3,50</span>
+            </div>
+        </article>
+
+    </section>
+
+</main>
+
+<footer>
+    <h3>GRANDE PIRAMIDE D'EGITTO</h3>
+    <p>I sapori dell'Egitto, freschi e autentici.</p>
+    <p>© 2026 Grande Piramide d'Egitto</p>
+</footer>
+
+</body>
+</html>
