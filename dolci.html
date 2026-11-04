@@ -1,96 +1,90 @@
-
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I nostri dolci - Grande Piramide d'Egitto</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">🍕 GRANDE PIRAMIDE D'EGITTO</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pizze.html">Pizze</a></li>
-                <li><a href="bevande.html">Bevande</a></li>
-                <li><a href="dolci.html">Dolci</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1 class="section-title">🍰 I NOSTRI DOLCI</h1>
-        <p class="section-subtitle">
-            Il modo più dolce per concludere la tua esperienza.
-        </p>
-
-        <section class="menu">
-
-            <article class="prodotto">
-                <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=700" alt="Tiramisù">
-                <div class="prodotto-content">
-                    <h2>Tiramisù</h2>
-                    <p>Crema al mascarpone, savoiardi, caffè e cacao.</p>
-                    <span class="prezzo">€ 5,00</span>
-                </div>
-            </article>
-
-            <article class="prodotto">
-                <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=700" alt="Cheesecake">
-                <div class="prodotto-content">
-                    <h2>Cheesecake</h2>
-                    <p>Crema al formaggio su una base croccante di biscotto.</p>
-                    <span class="prezzo">€ 5,00</span>
-                </div>
-            </article>
-
-            <article class="prodotto">
-                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=700" alt="Panna cotta">
-                <div class="prodotto-content">
-                    <h2>Panna Cotta</h2>
-                    <p>Delicata panna cotta con salsa ai frutti di bosco.</p>
-                    <span class="prezzo">€ 4,50</span>
-                </div>
-            </article>
-
-            <article class="prodotto">
-                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=700" alt="Dolce al cioccolato">
-                <div class="prodotto-content">
-                    <h2>Dolce al Cioccolato</h2>
-                    <p>Un dessert goloso dal cuore al cioccolato.</p>
-                    <span class="prezzo">€ 5,50</span>
-                </div>
-            </article>
-
-            <article class="prodotto">
-                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=700" alt="Gelato">
-                <div class="prodotto-content">
-                    <h2>Gelato</h2>
-                    <p>Gelato con gusti a scelta.</p>
-                    <span class="prezzo">€ 4,00</span>
-                </div>
-            </article>
-
-            <article class="prodotto">
-                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700" alt="Torta al cioccolato">
-                <div class="prodotto-content">
-                    <h2>Torta al Cioccolato</h2>
-                    <p>Una morbida torta con cioccolato e crema.</p>
-                    <span class="prezzo">€ 5,00</span>
-                </div>
-            </article>
-
-        </section>
-    </main>
-
-    <footer>
-        <h3>GRANDE PIRAMIDE D'EGITTO</h3>
-        <p>La dolcezza che completa ogni esperienza.</p>
-        <p>© 2026 Grande Piramide d'Egitto</p>
-    </footer>
-
-</body>
-</html>
+Claude
+Dolci egiziani · CSS
+/* =====================================
+   GRANDE PIRAMIDE D'EGITTO
+   STILE DOLCI EGIZIANI
+   (da caricare DOPO style.css)
+===================================== */
+ 
+/* TITOLO DI SEZIONE (occupa tutta la riga della griglia) */
+.menu-divider {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 25px 0 5px;
+}
+ 
+.menu-divider h2 {
+    display: inline-block;
+    color: #8b511c;
+    font-size: 28px;
+    letter-spacing: 1px;
+    padding: 0 20px 12px;
+    border-bottom: 3px solid #d69a37;
+}
+ 
+.menu-divider p {
+    color: #6d6257;
+    margin-top: 12px;
+    font-size: 16px;
+}
+ 
+/* CARD EGIZIANA */
+.prodotto.egiziano {
+    position: relative;
+    border-top: 5px solid #d69a37;
+    background: linear-gradient(180deg, #fffdf8 0%, #ffffff 100%);
+}
+ 
+.prodotto.egiziano:hover {
+    box-shadow: 0 15px 30px rgba(139, 81, 28, 0.28);
+}
+ 
+/* BADGE SULL'IMMAGINE */
+.prodotto.egiziano::before {
+    content: "𓂀 Egiziano";
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 2;
+    background: rgba(37, 27, 20, 0.88);
+    color: #e6b65c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 6px 13px;
+    border-radius: 20px;
+}
+ 
+/* TITOLO CARD */
+.prodotto.egiziano h2 {
+    color: #7a4415;
+}
+ 
+.prodotto.egiziano h2::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background: #d69a37;
+    margin-top: 8px;
+    border-radius: 3px;
+}
+ 
+/* PREZZO */
+.prodotto.egiziano .prezzo {
+    background: linear-gradient(135deg, #f0c66d, #d69a37);
+    color: #251b14;
+}
+ 
+/* IMMAGINI: foto di provenienza diversa, stessa resa */
+.prodotto.egiziano img {
+    background: #f4e5c6;
+}
+ 
+@media (max-width: 650px) {
+    .menu-divider h2 {
+        font-size: 23px;
+    }
+}
+ 
+Claude ha terminato la risposta
